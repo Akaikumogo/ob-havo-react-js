@@ -26,7 +26,7 @@ const App = () => {
       ) : (
         <div>
           <Search />
-          <div className="sm:flex sm:mx-auto sm:w-[70%] sm:h-[85vh]">
+          <div className="sm:flex sm:mx-auto sm:w-[70%] sm:h-auto">
             <Weather />
             <WeatherChilds />
           </div>

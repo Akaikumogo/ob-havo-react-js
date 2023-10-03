@@ -10,7 +10,7 @@ const Weather = () => {
     <div
       className={
         " w-[95%] h-[350px] sm:h-[505px] sm:w-[350px]  sm:m-0 sm:mx-auto   justify-between  items-center mt-[30px] m-[10px] mb-[50px] rounded-[25px] flex gap-3" +
-        `${isError ? " sm:h-[505px] sm:w-[98%]" : ""}`
+        `${isError ? " sm:h-[100%] sm:w-[98%] bg-cover bg-no-repeat" : ""}`
       }
       style={
         !isError && dayData
@@ -19,7 +19,8 @@ const Weather = () => {
                 dayData.sys.pod,
                 dayData.weather[0].main
               )})`,
-              backgroundSize: "375px 505px",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
               boxShadow: "49px -7px 27px 6px rgba(0, 0, 0, 0.13)",
             }
           : null

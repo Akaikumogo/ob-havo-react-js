@@ -18,13 +18,13 @@ const WeatherChilds = () => {
       {isError ? (
         ""
       ) : (
-        <div className="sm:w-full w-[90%] rpunded-xl sm:h-[95%]  sm:mx-auto mx-auto  ">
+        <div className="sm:w-full w-[90%] rpunded-xl sm:h-[80vh]  sm:mx-auto mx-auto  ">
           <div className="overflow-x-auto   sm:h-full h-[23vh] gap-2 sm:flex-col sm:gap-[5px]  sm:block  flex rounded-xl  justify-between w-full ">
             {dayData.map((item) => (
               <div
-                className={`  w-[49%] h-full px-3 mx-auto py-2 rounded-2xl shadow-md ${
+                className={` sm:h-[150px]  w-[49%] h-full px-3 mx-auto py-2 rounded-2xl shadow-md ${
                   data[1] === item
-                    ? "border nowGlass sm:w-full sm:h-[30%] sm:mb-2 w-[49%]"
+                    ? "border nowGlass sm:w-full sm:h-[150px] sm:mb-2 w-[49%]"
                     : "glass  sm:w-[94%] sm:h-[28%] sm:mb-2 w-[40%]"
                 }`}
                 key={item.dt}
