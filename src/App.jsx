@@ -7,17 +7,17 @@ import { useGlobalContext } from "./context";
 const App = () => {
   const { isLoading, weatherData } = useGlobalContext();
   const data1 = weatherData?.list;
-  const dayData = data1 ? data1[1] : null;
+  const dayData = data1 ? data1[1] : { sys: { pod: "d" } };
   console.log(dayData, "thid is day data ");
   return (
     <div
       className={`h-[100vh] flex flex-col gap-3 w-full ${
-        dayData?.sys.pod === "d"
+        dayData && dayData.sys.pod === "d"
           ? "bg-[url(./backgrounds/tDay.png)] sm:bg-[url(./backgrounds/pDay.png)]"
           : dayData.sys.pod === "n"
           ? "bg-[url(./backgrounds/tNight.png)] sm:bg-[url(./backgrounds/pNight.png)]"
           : "bg-violet-700"
-      } bg-no-repeat bg-cover `}
+      } bg-cover bg-no-repeat`}
     >
       {isLoading ? (
         <div className="w-full h-full mx-auto flex justify-center items-center">
