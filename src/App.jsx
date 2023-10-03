@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div
       className={`h-[100vh] flex flex-col gap-3 w-full ${
-        dayData && dayData.sys.pod === "d"
+        dayData?.sys.pod === "d"
           ? "bg-[url(./backgrounds/tDay.png)] sm:bg-[url(./backgrounds/pDay.png)]"
           : dayData.sys.pod === "n"
           ? "bg-[url(./backgrounds/tNight.png)] sm:bg-[url(./backgrounds/pNight.png)]"

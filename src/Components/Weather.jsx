@@ -9,7 +9,7 @@ const Weather = () => {
   return (
     <div
       className={
-        "glass w-[95%] h-[350px] sm:h-[505px] sm:w-[350px] sm:m-0 sm:mx-auto   justify-between  items-center mt-[30px] m-[10px] mb-[50px] rounded-[25px] flex gap-3" +
+        " w-[95%] h-[350px] sm:h-[505px] sm:w-[350px]  sm:m-0 sm:mx-auto   justify-between  items-center mt-[30px] m-[10px] mb-[50px] rounded-[25px] flex gap-3" +
         `${isError ? " sm:h-[505px] sm:w-[98%]" : ""}`
       }
       style={
@@ -27,7 +27,7 @@ const Weather = () => {
     >
       <div
         className={
-          "glass w-[100%] h-[350px] sm:h-[505px] sm:w-[350px] sm:m-0 sm:mx-auto  p-1 justify-between  items-center   rounded-[25px] flex gap-3" +
+          "mGlass w-[100%] h-[350px] sm:h-[505px] sm:w-[350px] sm:m-0 sm:mx-auto  p-1 justify-between  items-center    flex gap-3" +
           `${isError ? " sm:h-[505px] sm:w-[98%]" : ""}`
         }
       >
